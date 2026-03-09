@@ -1,0 +1,204 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Urban Threads | Premium T-Shirts</title>  
+    <style>  
+        /* CSS STYLES */  
+        :root {  
+            --primary: #1a1a1a;  
+            --accent: #ff4757;  
+            --light: #f4f4f4;  
+        }  body {  
+        font-family: 'Helvetica Neue', sans-serif;  
+        margin: 0;  
+        padding: 0;  
+        color: var(--primary);  
+    }  
+
+    /* Navigation */  
+    nav {  
+        display: flex;  
+        justify-content: space-between;  
+        align-items: center;  
+        padding: 20px 5%;  
+        background: white;  
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);  
+    }  
+
+    .logo {  
+        font-size: 1.5rem;  
+        font-weight: bold;  
+        letter-spacing: 2px;  
+    }  
+
+    .nav-links a {  
+        text-decoration: none;  
+        color: var(--primary);  
+        margin-left: 20px;  
+        font-weight: 500;  
+    }  
+
+    .btn {  
+        background: var(--primary);  
+        color: white;  
+        padding: 10px 20px;  
+        text-decoration: none;  
+        border-radius: 5px;  
+        transition: 0.3s;  
+    }  
+
+    .btn:hover {  
+        background: var(--accent);  
+    }  
+
+    /* Hero Section */  
+    .hero {  
+        background: var(--light);  
+        height: 80vh;  
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+        text-align: center;  
+        flex-direction: column;  
+    }  
+
+    .hero h1 {  
+        font-size: 3.5rem;  
+        margin-bottom: 10px;  
+    }  
+
+    .hero p {  
+        font-size: 1.2rem;  
+        color: #666;  
+        margin-bottom: 30px;  
+    }  
+
+    /* Product Grid */  
+    .products {  
+        padding: 50px 5%;  
+    }  
+
+    .section-title {  
+        text-align: center;  
+        margin-bottom: 40px;  
+    }  
+
+    .grid {  
+        display: grid;  
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+        gap: 30px;  
+    }  
+
+    .product-card {  
+        border: 1px solid #eee;  
+        border-radius: 8px;  
+        overflow: hidden;  
+        transition: transform 0.2s;  
+    }  
+
+    .product-card:hover {  
+        transform: translateY(-5px);  
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);  
+    }  
+
+    .product-image {  
+        height: 300px;  
+        background-color: #ddd;  
+        display: flex;  
+        align-items: center;  
+        justify-content: center;  
+        color: #888;  
+    }  
+
+    .product-info {  
+        padding: 15px;  
+        text-align: center;  
+    }  
+
+    .price {  
+        color: var(--accent);  
+        font-weight: bold;  
+        font-size: 1.1rem;  
+    }  
+
+    /* Footer */  
+    footer {  
+        background: var(--primary);  
+        color: white;  
+        text-align: center;  
+        padding: 40px;  
+        margin-top: 50px;  
+    }  
+</style>
+
+</head>  
+<body>  <!-- Navigation -->  
+<nav>  
+    <div class="logo">URBAN THREADS</div>  
+    <div class="nav-links">  
+        <a href="#">Home</a>  
+        <a href="#">Men</a>  
+        <a href="#">Women</a>  
+        <a href="#" class="btn">Cart (0)</a>  
+    </div>  
+</nav>  
+
+<!-- Hero Section -->  
+<section class="hero">  
+    <h1>Wear Your Vibe.</h1>  
+    <p>Premium cotton t-shirts designed for the modern creative.</p>  
+    <a href="#shop" class="btn" style="background: var(--accent);">Shop Collection</a>  
+</section>  
+
+<!-- Product Section -->  
+<section class="products" id="shop">  
+    <h2 class="section-title">New Arrivals</h2>  
+      
+    <div class="grid">  
+        <!-- Product 1 -->  
+        <div class="product-card">  
+            <div class="product-image">  
+                <!-- Replace with <img src="shirt1.jpg"> -->  
+                <span>Image Placeholder</span>  
+            </div>  
+            <div class="product-info">  
+                <h3>The Classic Black</h3>  
+                <p class="price">$25.00</p>  
+                <a href="#" class="btn">Add to Cart</a>  
+            </div>  
+        </div>  
+
+        <!-- Product 2 -->  
+        <div class="product-card">  
+            <div class="product-image">  
+                <span>Image Placeholder</span>  
+            </div>  
+            <div class="product-info">  
+                <h3>Graphic Tee - Sunset</h3>  
+                <p class="price">$30.00</p>  
+                <a href="#" class="btn">Add to Cart</a>  
+            </div>  
+        </div>  
+
+        <!-- Product 3 -->  
+        <div class="product-card">  
+            <div class="product-image">  
+                <span>Image Placeholder</span>  
+            </div>  
+            <div class="product-info">  
+                <h3>Oversized Beige</h3>  
+                <p class="price">$28.00</p>  
+                <a href="#" class="btn">Add to Cart</a>  
+            </div>  
+        </div>  
+    </div>  
+</section>  
+
+<!-- Footer -->  
+<footer>  
+    <p>&copy; 2023 Urban Threads. All rights reserved.</p>  
+</footer>
+
+</body>  
+</html>
